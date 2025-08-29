@@ -40,7 +40,7 @@ body {
     padding: 0 2rem;
 }
 
-/* Vídeo de Fundo */
+
 .video-background {
     position: fixed;
     top: 0;
@@ -67,7 +67,7 @@ body {
     z-index: -1;
 }
 
-/* Navegação */
+
 .header {
     position: fixed;
     top: 0;
@@ -152,7 +152,7 @@ body {
     transition: var(--transition);
 }
 
-/* Hero Section */
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -270,7 +270,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Seções Gerais */
+
 .section-title {
     font-size: 4.5rem;
     font-weight: 700;
@@ -466,7 +466,7 @@ body {
     margin-bottom: 3rem;
 }
 
-/* Seção Benefícios */
+
 .beneficios {
     padding: 10rem 0;
     background: rgba(26, 26, 26, 0.9);
@@ -520,7 +520,7 @@ body {
     line-height: 1.6;
 }
 
-/* Seção Galeria */
+
 .galeria {
     padding: 10rem 0;
     background: var(--bg-dark);
@@ -575,7 +575,7 @@ body {
     color: var(--text-dark);
 }
 
-/* Seção Localização */
+
 .localizacao {
     padding: 10rem 0;
     background: rgba(26, 26, 26, 0.9);
@@ -636,7 +636,7 @@ body {
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* Footer */
+
 .footer {
     background: var(--secondary-color);
     padding: 4rem 0 2rem;
@@ -714,7 +714,7 @@ body {
     color: var(--text-light);
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     html {
         font-size: 55%;
