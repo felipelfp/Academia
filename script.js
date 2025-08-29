@@ -1,4 +1,4 @@
-// Navegação Mobile
+
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -17,7 +17,7 @@ if (hamburger && navMenu) {
     });
 }
 
-// Navegação suave
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -31,7 +31,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Efeito de scroll na navegação
+
 window.addEventListener('scroll', function() {
     const header = document.querySelector('.header');
     if (window.scrollY > 100) {
@@ -43,7 +43,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Animação de entrada dos elementos
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -58,7 +58,7 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-// Aplicar animação aos elementos
+
 document.addEventListener('DOMContentLoaded', function() {
     const animatedElements = document.querySelectorAll('.modalidade-card, .beneficio-item, .instructor-card, .galeria-item');
     
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Galeria com lightbox simples
+
 document.querySelectorAll('.galeria-item').forEach(item => {
     item.addEventListener('click', function() {
         const img = this.querySelector('img');
@@ -85,7 +85,7 @@ document.querySelectorAll('.galeria-item').forEach(item => {
         
         document.body.appendChild(lightbox);
         
-        // Fechar lightbox
+        
         lightbox.addEventListener('click', function(e) {
             if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
                 document.body.removeChild(lightbox);
@@ -94,7 +94,7 @@ document.querySelectorAll('.galeria-item').forEach(item => {
     });
 });
 
-// Adicionar estilos do lightbox dinamicamente
+
 const lightboxStyles = `
     .lightbox {
         position: fixed;
@@ -145,12 +145,12 @@ const lightboxStyles = `
     }
 `;
 
-// Adicionar estilos ao head
+
 const styleSheet = document.createElement('style');
 styleSheet.textContent = lightboxStyles;
 document.head.appendChild(styleSheet);
 
-// Efeito parallax no vídeo de fundo
+
 window.addEventListener('scroll', function() {
     const scrolled = window.pageYOffset;
     const video = document.querySelector('.video-background video');
@@ -159,7 +159,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Contador animado (para futuras implementações)
+
 function animateCounter(element, target, duration = 2000) {
     let start = 0;
     const increment = target / (duration / 16);
@@ -175,7 +175,7 @@ function animateCounter(element, target, duration = 2000) {
     }, 16);
 }
 
-// Lazy loading para imagens
+
 if ('IntersectionObserver' in window) {
     const imageObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -191,4 +191,5 @@ if ('IntersectionObserver' in window) {
     document.querySelectorAll('img[data-src]').forEach(img => {
         imageObserver.observe(img);
     });
+
 }
